@@ -10,7 +10,7 @@
     "Other"
   ],
   "activationEvents": [
-    "*",
+    "onStartupFinished",
     "onCommand:open-symlink-target.helloWorld"
   ],
   "main": "./out/extension.js",
@@ -18,7 +18,7 @@
     "commands": [
       {
         "command": "open-symlink-target.helloWorld",
-        "title": "Hello World"
+        "title": "Symlink resolver"
       }
     ]
   },
@@ -30,6 +30,7 @@
     "lint": "eslint src",
     "test": "vscode-test"
   },
+  "repository": "https://github.com/PeterFromSweden/open-symlink-target",
   "devDependencies": {
     "@types/vscode": "^1.106.1",
     "@types/mocha": "^10.0.10",
